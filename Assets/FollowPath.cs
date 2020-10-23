@@ -24,22 +24,43 @@ public class FollowPath : MonoBehaviour
     
     public void GoToHeli()
     {
-        g.AStar(currentNode, wps[1]);
-        currentWP = 0;
+        if (wps[1])
+        {
+            g.AStar(currentNode, wps[1]);
+            currentWP = 0;
+        }
+        else Debug.Log("There is nothing at waypoint 1");
     }
 
     public void GoToTower()
     {
-        g.AStar(currentNode, wps[8]);
-        currentWP = 0;
+        if (wps[8])
+        {
+            g.AStar(currentNode, wps[8]);
+            currentWP = 0;
+        }
+        else Debug.Log("There is nothing at waypoint 8");
     }
-    
-    // Update is called once per frame
-    void LateUpdate()
+
+    public void GoToRuinedTank()
+    {
+        if (wps[15])
+        {
+            g.AStar(currentNode, wps[15]);
+
+            currentWP = 0;
+        }
+        else Debug.Log("There is nothing at waypoint 15");
+    }
+
+
+        void LateUpdate()
     {
         if (g.getPathLength() == 0 || currentWP == g.getPathLength())
+        {
             return;
-
+        }
+        
         //the node we are closest to at this moment
         currentNode = g.getPathPoint(currentWP);
 
