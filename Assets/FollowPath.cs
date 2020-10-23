@@ -53,7 +53,16 @@ public class FollowPath : MonoBehaviour
         else Debug.Log("There is nothing at waypoint 15");
     }
 
+    public void GoBehindFactory()
+    {
+        if (wps[19])
+        {
+            g.AStar(currentNode, wps[19]);
 
+            currentWP = 0;
+        }
+        else Debug.Log("There is nothing at waypoint 19");
+    }
         void LateUpdate()
     {
         if (g.getPathLength() == 0 || currentWP == g.getPathLength())
