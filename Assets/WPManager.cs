@@ -36,6 +36,7 @@ public class WPManager : MonoBehaviour
                 }
             }
         }
+        graph.debugDraw();
     }
 
     // Update is called once per frame

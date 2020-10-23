@@ -194,7 +194,7 @@ public class Graph
     	for (int i = 0; i < edges.Count; i++)
 	  	{
     		Debug.DrawLine(edges[i].startNode.id.transform.position, edges[i].endNode.id.transform.position, Color.red);
-    		
+			
 	  	}
 	  	//draw directions
 	  	for (int i = 0; i < edges.Count; i++)
