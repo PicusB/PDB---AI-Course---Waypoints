@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: a482cabb134dd734f80b64043d7488d2, type: 2}
 --- !u!1001 &7221724
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2748,9 +2748,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5320858d8afe66240a99e5cb216a642b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  accuracy: 1
-  rotSpeed: 2
   wpManager: {fileID: 1977140231}
+--- !u!195 &1814677463
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1814677460}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &1952979228
 PrefabInstance:
   m_ObjectHideFlags: 0
